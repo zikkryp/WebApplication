@@ -1,0 +1,115 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Solidity Free HTML5 Template</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/Content/css/animate.css" />
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/css/templatemo_misc.css" />
+    <link rel="stylesheet" href="~/Content/css/templatemo_style.css" />
+    <!-- JavaScripts -->
+    <script src="~/Content/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/js/jquery.singlePageNav.js"></script>
+    <script src="~/Content/js/jquery.flexslider.js"></script>
+    <script src="~/Content/js/custom.js"></script>
+    <script src="~/Content/js/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/js/jquery.lightbox.js"></script>
+    <script src="~/Content/js/templatemo_custom.js"></script>
+    <script src="~/Content/js/jquery-git2.js"></script><!-- previous next script -->
+</head>
+<body>
+    <!-- title start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="templatemo_title"><a href="#">ASP.NET</a></div>
+                <div class="templatemo_subtitle">MVC Application</div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <form id="search_form">
+                    <div class="templatemo_search">
+                        <input name="search" type="text" placeholder="Search here...." id="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- title end -->
+    <div class="site-header">
+        <div class="main-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- This one in here is responsive menu for tablet and mobiles -->
+                        <div class="responsive-navigation visible-sm visible-xs">
+                            <a href="#" class="menu-toggle-btn">
+                                <i class="fa fa-bars fa-2x"></i>
+                            </a>
+                            <div class="navigation responsive_menu">
+                                <ul>
+                                    <li>@Html.ActionLink("Home", "Index")</li>
+                                    <li>@Html.ActionLink("Service", "Service")</li>
+                                    <li>@Html.ActionLink("Portfolio", "Portfolio")</li>
+                                    <li>@Html.ActionLink("Contact", "Contact")</li>
+                                    @*<li><a class="show-1 templatemo_home" href="#">Main Page</a></li>
+                                        <li><a class="show-2 templatemo_page2" href="#">Service</a></li>
+                                        <li><a class="show-3 templatemo_page3" href="#">Portfolio</a></li>
+                                        <li><a class="show-5 templatemo_page5" href="#">Contact</a></li>*@
+                                </ul>
+                            </div> <!-- /.responsive_menu -->
+                        </div> <!-- /responsive_navigation -->
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 navigation">
+                        <div class="row main_menu">
+                            <div class="col-md-2"><a id="prev">Prev</a></div>
+                            <div class="col-md-2">
+                                <li>@Html.ActionLink("Home", "Index")</li>
+                                @*<a class="show-1 templatemo_home" href="#">
+                                    <div class="fa fa-home"></div>
+                                </a>*@
+                            </div>
+                            <div class="col-md-2"><a class="show-2 templatemo_page2" href="#"><div class="fa fa-wrench"></div></a></div>
+                            <div class="col-md-2"><a class="show-3 templatemo_page3" href="#"><div class="fa fa-picture-o"></div></a></div>
+                            <div class="col-md-2"><a class="show-5 templatemo_page5" href="#"><div class="fa fa-phone"></div></a></div>
+                            <div class="col-md-2"><a id="next">Next</a></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu-container">
+        <div class="divs">
+            @RenderBody()
+        </div>
+    </div>
+    <!-- footer start -->
+    <div class="clear"></div>
+    <div class="templatemo_footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    Copyright © @DateTime.Now.Year ASP.NET MVC Application
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->
+    <!-- templatemo 407 solidity -->
+</body>
+</html>
